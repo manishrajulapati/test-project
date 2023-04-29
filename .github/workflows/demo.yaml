@@ -26,5 +26,5 @@ jobs:
         
       - name: Docker image Build
         run: |
-           docker build test .
+           docker build -t test .
              
