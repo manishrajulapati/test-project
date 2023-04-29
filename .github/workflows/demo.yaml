@@ -23,8 +23,3 @@ jobs:
       - name: Login to Amazon ECR
         id: login-ecr
         uses: aws-actions/amazon-ecr-login@v1
-
-
-      - name: Build the Docker image
-        run: |
-            docker build -t 758671678745.dkr.ecr.ap-south-1.amazonaws.com/demo-project:$GITHUB_REF_NAME-$GITHUB_SHA .
